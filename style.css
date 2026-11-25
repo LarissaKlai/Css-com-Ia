@@ -1,0 +1,253 @@
+.coral-1 { color: #FF7F50; }
+.coral-2 { color: #E57147; }
+.coral-3 { color: #B35837; }
+.coral-4 { color: #7F3F28; }
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #FFFFFF;
+    background: #7F3F28;
+    z-index: 9999;
+}
+
+.cabecalho a {
+    color: #FFFFFF;
+}
+
+.miolo {
+    width: min(1180px, calc(100% - 40px));
+    margin-inline: auto;
+}
+
+.cabecalho-interno {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    min-height: 60px;
+    padding-block: 12px;
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.marca-nome {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.marca-sub {
+    margin-top: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    white-space: nowrap;
+}
+
+.menu a {
+    line-height: 1.6;
+}
+
+.botao-latao {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #B35837;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.marca,
+.menu a,
+.botao {
+    text-decoration: none;
+}
+
+.heroi-texto {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.heroi-grade {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    align-items: center;
+    gap: 64px;
+    padding: 28px;
+    border: 2px solid #7F3F28;
+    border-radius: 12px;
+    background: #7F3F28;
+}
+
+.heroi {
+    padding: 120px 0 60px;
+    color: #FFFFFF;
+}
+
+.heroi-acoes .botao-contorno {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid #c39a47;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #c39a47;
+    font-weight: 600;
+}
+
+.heroi-pontos {
+    list-style: none;
+    padding-left: 0;
+}
+
+.heroi-pontos li::before {
+    content: "★";
+    margin-right: 8px;
+    color: #c39a47;
+}
+
+.retrato {
+    position: relative;
+    isolation: isolate;
+    margin: 0;
+    text-align: center;
+}
+
+.retrato::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 8% 5% 12%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 217, 102, 0.95) 0%, rgba(255, 217, 102, 0.55) 45%, transparent 72%);
+    filter: blur(6px);
+}
+
+.retrato svg {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.retrato figcaption {
+    display: block;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #B35837;
+    color: #FFFFFF;
+}
+
+.faixa-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.faixa-lista li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 90px;
+    padding: 14px 12px;
+    border: 2px solid #7F3F28;
+    border-radius: 8px;
+    background: #c39a47;
+}
+
+.faixa-lista strong {
+    display: block;
+    padding: 0;
+    border: none;
+    line-height: 1.2;
+}
+
+.faixa-lista span {
+    margin-top: 6px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-block: 48px;
+}
+
+.secao-cabeca {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.secao-cabeca h2,
+.secao-cabeca p {
+    margin: 0;
+}
+
+.cartao-area h3::before {
+    content: "★";
+    margin-right: 8px;
+    color: #c39a47;
+}
+
+.secao-clara .miolo {
+    box-sizing: border-box;
+    padding: 32px;
+    border: 2px solid #7F3F28;
+    border-radius: 12px;
+}
+
+.sobre-grade {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    align-items: start;
+    gap: 32px;
+}
+
+.ficha ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ficha li::before {
+    content: "★";
+    margin-right: 8px;
+    color: #c39a47;
+}
+
+.ficha h3 {
+    color: #7F3F28;
+}
+
+.valores h3 {
+    color: #7F3F28;
+    font-size: 1.35rem;
+}
+
+.sobre-texto h2 {
+    color: #7F3F28;
+}
+
+
